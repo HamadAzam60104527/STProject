@@ -2,3 +2,4 @@ transformers
 youtube_transcript_api
 collections
 random
+streamlit
