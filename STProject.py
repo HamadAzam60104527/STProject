@@ -80,7 +80,7 @@ if video_id:
         else:
             overall_sentiment = "Neutral (equal positive and negative)"
 
-        st.success(f"Final Overall Sentiment: }**")
+        st.success(f"Final Overall Sentiment: ")
 
     except Exception as e:
         st.error(f"Error: {str(e)}")
