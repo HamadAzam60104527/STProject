@@ -8,15 +8,12 @@ import re
 st.set_page_config(page_title="YouTube Transcript Sentiment Analyzer", layout="wide")
 st.title("YouTube Transcript Sentiment Analysis")
 
-'''
-def extract_youtube_id(url):
-    """
-    Extracts the YouTube video ID from a URL.
-    """
-    pattern = r"(?:v=|\/)([0-9A-Za-z_-]{11}).*"
-    match = re.search(pattern, url)
-    return match.group(1) if match else None
-'''
+
+#def extract_youtube_id(url):
+    #pattern = r"(?:v=|\/)([0-9A-Za-z_-]{11}).*"
+    #match = re.search(pattern, url)
+    #return match.group(1) if match else None
+
 
 video_id = st.text_input("Enter YouTube Video ID :")
 
@@ -81,7 +78,7 @@ if video_id:
         else:
             overall_sentiment = "Neutral (equal positive and negative)"
 
-        st.success(f"Final Overall Sentiment: ")
+        st.success(f"Final Overall Sentiment: "overall_sentiment"")
 
     except Exception as e:
         st.error(f"Error: {str(e)}")
