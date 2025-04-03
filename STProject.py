@@ -8,6 +8,7 @@ import re
 st.set_page_config(page_title="YouTube Transcript Sentiment Analyzer", layout="wide")
 st.title("YouTube Transcript Sentiment Analysis")
 
+'''
 def extract_youtube_id(url):
     """
     Extracts the YouTube video ID from a URL.
@@ -15,9 +16,9 @@ def extract_youtube_id(url):
     pattern = r"(?:v=|\/)([0-9A-Za-z_-]{11}).*"
     match = re.search(pattern, url)
     return match.group(1) if match else None
+'''
 
-youtube_url = st.text_input("Enter YouTube Video URL :")
-video_id = extract_youtube_id(youtube_url)
+video_id = st.text_input("Enter YouTube Video ID :")
 
 if video_id:
     try:
